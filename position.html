@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position</title>
+    <style>
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            left: 50px;
+        }
+
+        .box {
+            position: relative;
+            left: 250px;
+        }
+
+        .can {
+            position: absolute;
+            top: 450px;
+            right: 125px;
+        }
+
+
+        .table {
+            position: fixed;
+            top: 90px;
+            background-color: violet;
+            right: 7%;
+
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        .ban {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position Static</h2>
+    <div class="Static">
+        <p>Explanation:</p>
+        <p>Default webpage positioning.</p>
+    </div>
+    <div>
+        <p>Expected output:</p>
+        <p>Element appears normally.</p>
+    </div>
+    <hr>
+    <h2>Position Relative</h2>
+    <div class="relative">
+        <p>Explanation:</p>
+        <p>Moves relative to origional position.</p>
+    </div>
+    <div class="box">
+        <p>Expected output:</p>
+        <p>Elements shifts right by 50px.</p>
+    </div>
+    <hr>
+    <h2>Position Absolute</h2>
+    <p>Explanation:</p>
+    <p>Moves relative to origional position.</p>
+
+    <div class="can">
+        <p>Expected output:</p>
+        <p>Element appears top-right.</p>
+    </div>
+    <hr>
+    <h2>Position Fixed</h2>
+    <div class="Fixed">
+        <p>Explanation:</p>
+        <p>Stays fixed during scroll.</p>
+    </div>
+    <br>
+    <div class="table">
+        <p>Expected output:</p>
+        <p>Element remains visible while scrolling.</p>
+    </div>
+    <hr>
+    <h2>Position Sticky</h2>
+    <div class="sticky">
+        <p>Explanation:</p>
+        <p>Becomes fixed when scrolling.</p>
+    </div>
+    <div class="ban">
+        <p>Expected output:</p>
+        <p>Hedder sticks to top.</p>
+</body>
+
+</html>
