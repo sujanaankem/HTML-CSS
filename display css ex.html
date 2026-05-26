@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Display</title>
         <style>
         h1{text-align: center; }
             .display{
@@ -12,40 +13,38 @@
                 background: violet;
             }
             .inline{
-                display:block ;
+                display: inline ;
                 background-color:yellow;
-            }
-            span{
-                display: inline;
-                background: yellow;
             }
             .inlineoutput{
                  display: block;
                 background: violet;
             }
             .Inline-Block{
-                 display: block;
-                background-color:bisque;
+                display: inline-block;
+                width: 296px;
+                height: 88px;
+                background: orange;
             }
             .box{
                 display: inline-block;
                 width: 175px;
-                height: 87px;
-                background: orange;
+                height: 89px;
+                background: violet;
             }
             .None{
                  display: block;
                 background-color:antiquewhite; 
             }
             .hide{
-                display: none;
+                background: violet;
             }
         </style>
     </head>
     <body>
         <h1>Css complete Examples Guide</h1>
-          <div class="display">
-        <h3>Display Block</h3>
+        <h2>Display Block</h2>  
+        <div class="display">
         <p>Explanation:</p>
         <p>display:block takes full widdth and starts on new line.</p>
         </div>
@@ -55,30 +54,30 @@
         <p>Each div appears on seperate line with full width.</p>
         </div>
 
+        <h2>Display Inline</h2>
         <div class="Inline">
-            <h3>Display Inline</h3>
             <p>Explanation:</p>
             <p>display:Inline keeps elements in same line.</p>
         </div>
 
-        <div class="inlineoutput">
+        <span class="inlineoutput">
             <p>Expected outout:</p>
-            <p>Text appears side by side in same line</p>
-            </div>
+            <p>Text appears side by side in same line.</p>
+        </span>
 
+             <h2>Display Inline-Block</h2>
             <div class="Inline-Block">
-                <h3>Display Inline-Block</h3>
                 <p>Explanation:</p>
                 <p>Allows width and height while styling inline.</p>
             </div>
 
             <div class="box">
              <p>Expected outout:</p>
-             <p>Boxes appear side by side</p>   
+             <p>Boxes appear side by side.</p>   
             </div>
 
+            <h2>Display None</h2>
             <div class="None">
-                <h3>Display None</h3>
                 <p>Explanation:</p>
                 <p>Hides elements completely.</p>
             </div>
