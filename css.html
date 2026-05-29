@@ -9,11 +9,21 @@
             height: 40px;
             padding-top: 20px;
         }
+        .sticky{
+            position: relative;
+            position: sticky;
+            top: 0;
+        }
 
         footer {
             background-color: #780606;
             height: 110px;
             padding-top: 20px;
+        }
+        .footer{
+            position: inherit;
+            position: sticky;
+            bottom: 0;
         }
 
         a {
@@ -53,12 +63,14 @@
 </head>
 
 <body>
+    <div class="sticky">
     <header>
         <a href="home.html">Home</a> |
         <a href="details.html">Details</a> |
         <a href="contact.html">Contact details</a> |
         <a href="media.html">Project Highlights</a>
     </header>
+    </div>
 
     <div>
         <h2 style="text-align: center;"><u>Contact Me</u></h2>
@@ -142,8 +154,8 @@
         </form>
     </div>
     <br>
-</body>
-
+    
+<div class="footer">
 <footer style="color:white ; size: 20px;">
 
     📧 E-mail : sujana@gmail.com<br>
@@ -154,5 +166,7 @@
     <a style="color: white; padding-right: 20px;" href="https://www.facebook.com/" style="padding-right: 80px;"> ⓕ </a>
     <a style="color: white; padding-right: 20px;" href="https://x.com/?lang=en-in" style="padding-right: 80px;">𝕏</a>
 </footer>
+</div>
+</body>
 
 </html>
