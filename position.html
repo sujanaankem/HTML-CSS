@@ -20,8 +20,8 @@
 
         .can {
             position: absolute;
-            top: 450px;
-            right: 125px;
+            top: 410px;
+            right: 100px;
         }
 
 
@@ -34,14 +34,13 @@
         }
 
         .sticky {
+            position:relative;
             position: sticky;
-            top: 0;
+            bottom: 0;
+            background-color: antiquewhite;
         }
 
-        .ban {
-            position: sticky;
-            top: 0;
-        }
+        
     </style>
 </head>
 
@@ -86,14 +85,13 @@
         <p>Element remains visible while scrolling.</p>
     </div>
     <hr>
-    <h2>Position Sticky</h2>
     <div class="sticky">
+    <h2>Position Sticky</h2>
         <p>Explanation:</p>
         <p>Becomes fixed when scrolling.</p>
-    </div>
-    <div class="ban">
         <p>Expected output:</p>
         <p>Hedder sticks to top.</p>
+    </div>
 </body>
 
 </html>
