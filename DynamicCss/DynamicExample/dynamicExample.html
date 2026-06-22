@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic examples</title>
+    <link rel="stylesheet" href="Css/Styles/DynamicExample.css">
+    <script defer>
+        function onClickChange() {
+            debugger;
+            document.getElementById("divPage").classList.add("page");
+
+            document.getElementById("divHidden").classList.remove("page");
+        }
+        function onClickNext() {
+            document.getElementById("divPage").classList.remove("page");
+            document.getElementById("divHidden").classList.add("page");
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div id="divPage">
+        Pinterest is an American social media service for publishing and discovery of information in the form of
+        digital pinboards.
+    </div>
+    <div id="divHidden" class="page">
+        This includes recipes, home, style, motivation, and inspiration on the Internet using
+        image sharing. Pinterest, Inc. was founded by Ben Silbermann, Paul Sciarra, and Evan Sharp, and is
+        headquartered in San Francisco.Pinterest emerged from an earlier app created by Ben Silbermann and Paul
+        Sciarra called Tote which served as a virtual replacement for paper catalogs. Tote struggled as a business,
+        significantly due to difficulties with mobile payments. At the time, mobile payment technology was not
+        sophisticated enough to enable easy on-the-go transactions, inhibiting users from making many purchases via
+        the app. Tote users however were amassing large collections of favorite items and sharing them with other
+        users.
+    </div>
+    <button id="btnClick" onclick="onClickChange()">Click</button>
+    <button id="btnNext" onclick="onClickNext()">Next</button>
+</body>
+
+</html>
