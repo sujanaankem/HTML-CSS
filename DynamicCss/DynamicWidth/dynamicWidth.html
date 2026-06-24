@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic width</title>
+    <link rel="stylesheet" href="Css/Styles/DynamicWidth.css">
+    <script defer>
+        function onClickChange() {
+            debugger;
+            var width = document.getElementById("txtSize").value
+            
+            if (width>0 & width<100){
+                document.getElementById("divResult").style.width=width+"%";
+            }
+            else{
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <label id="lblResult">%</label>
+    <input id="txtSize" placeholder="Enter any number from 1 to 100"><br><br>
+    <div id="btn">
+        <button id="btnResult" onclick="onClickChange()">Submit</button>
+    </div>
+    <div id="divResult"></div>
+</body>
+
+</html>
